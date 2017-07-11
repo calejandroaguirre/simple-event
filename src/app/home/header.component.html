@@ -1,9 +1,18 @@
 <!-- Header -->
-<header id="top" class="header">
+<!--<header id="top" class="header">
     <div class="text-vertical-center">
         <h1>Start Bootstrap</h1>
         <h3>Free Bootstrap Themes &amp; Templates</h3>
         <br>
         <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
     </div>
-</header>
+</header>-->
+<swiper [config]="config">
+    <div class="swiper-wrapper">
+        <img class="swiper-slide" *ngFor="let image of images" [src]="image">
+        <!--<img class="swiper-slide" *ngFor="let invitation of invitations" [src]="invitation.image">-->
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</swiper>

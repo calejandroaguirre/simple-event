@@ -1,0 +1,14 @@
+[
+    {
+        "eventName": "Piñata",
+        "eventType": "Piñata infantil",
+        "image":"./assets/img/bg.jpg",
+        "celebratedBy":["Alexa Fernanda", "Karla Aidee"]
+    },
+    {
+        "eventName": "Bautizo",
+        "eventType": "Bautizo",
+        "image":"./assets/img/callout.jpg",
+        "celebratedBy":["Carlos Aguirre jr."]
+    }
+]

@@ -1,5 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MdCardModule, MdToolbarModule, MdButtonModule, MdInputModule } from "@angular/material";
+import { HttpModule } from "@angular/http";
+
+import { SwiperModule } from "angular2-useful-swiper";
+
+import { AgmCoreModule } from "@agm/core";
 
 import { AppComponent } from './app.component';
 import { SharedModule } from "app/shared/shared.module";
@@ -10,6 +16,7 @@ import { CallOutComponent } from "app/home/callout.component";
 import { PortfolioComponent } from "app/home/portfolio.component";
 import { CallToAction } from "app/home/call-to-action";
 import { MapComponent } from "app/home/map.component";
+import { HeaderService } from "app/home/header.service";
 
 @NgModule({
   declarations: [
@@ -24,9 +31,17 @@ import { MapComponent } from "app/home/map.component";
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    HttpModule,
+    MdCardModule,
+    MdToolbarModule,
+    MdButtonModule,
+    SwiperModule,
+    SharedModule,
+    AgmCoreModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    HeaderService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
