@@ -37,7 +37,9 @@ import { HeaderService } from "app/home/header.service";
     MdButtonModule,
     SwiperModule,
     SharedModule,
-    AgmCoreModule.forRoot()
+    AgmCoreModule.forRoot({
+      apiKey: "AIzaSyDpGA42SzodYmmj2nU50-VdYYY1VsOKxmU"
+    })
   ],
   providers: [
     HeaderService

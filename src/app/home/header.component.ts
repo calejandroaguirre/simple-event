@@ -11,8 +11,10 @@ export class HeaderComponent implements OnInit {
     invitations: IInvitation[];
     errorMessage: string;
     images: string[] = [
-        './assets/img/moana-compressor.jpg',
-        './assets/img/El-bautizo.jpg'
+        './assets/img/moanainv-01-compressor.jpg',
+        './assets/img/Baut-03.jpg',
+        './assets/img/moanainv-02-compressor.jpg',
+        './assets/img/Baut-03.jpg'
     ]
     config: Object = {
         pagination: '.swiper-pagination',

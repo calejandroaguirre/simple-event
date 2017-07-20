@@ -236,9 +236,9 @@ swiper{
     }
 }
 
-.map iframe {
+/* .map iframe {
     pointer-events: none;
-}
+} */
 
 /* Footer */
 
@@ -256,4 +256,16 @@ footer {
 .sebm-google-map-container{
     height: 100%;
     width: 100%;
+}
+
+p.hour{
+    font-size: 24px;
+}
+
+section.services{
+    background-color: #e33b3d;
+}
+
+i.text-primary{
+    color: #e4df08;
 }
